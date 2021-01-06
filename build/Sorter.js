@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Sorter = void 0;
-//define an interface that describes what ckasses will need if they want to be eligable for sorting
 var Sorter = /** @class */ (function () {
     function Sorter(collection) {
         this.collection = collection;

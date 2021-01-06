@@ -1,9 +1,12 @@
-import { NumbersCollection } from './NumbersCollection';
 //define an interface that describes what ckasses will need if they want to be eligable for sorting
-
+interface Sortable {
+    length: number;
+    compare(leftIndex: number, rightIndex: number): boolean;
+    swap(leftIndex: number, rightIndex: number): void;
+}
 
 export class Sorter {
-    constructor(public collection: NumbersCollection ) { }
+    constructor(public collection: Sortable ) { }
  
     sort(): void {
      //    const length = this.collection.length
